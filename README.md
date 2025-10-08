@@ -1,6 +1,6 @@
-# NLA Challenge 1
+# Reasons
 
-This repository contains the source code for **Challenge 1**, which uses the [LIS library](https://www.ssisc.org/lis/) and [Eigen3](https://eigen.tuxfamily.org/) to solve sparse linear systems and produce output images.
+This repository contains the source code for a university assignement, based on some Numerical Linear Algebra tasks (mainly image processing operations) performed by using [LIS library](https://www.ssisc.org/lis/) and [Eigen3](https://eigen.tuxfamily.org/) to solve sparse linear systems and produce output images.
 
 ## Requirements
 
