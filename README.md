@@ -52,10 +52,10 @@ make clean
 
 This setup ensures that anyone with Eigen installed can compile and run the project using just `make` and `./challenge1`, without needing to install LIS separately.
 
-## Directory Structure
+## Repository Structure
 
 ```
-myrepo/  
+thisrepo/  
 ├── challenge1.cpp # Main C++ source code  
 ├── stb_image_write.h # Header for writing images (PNG)  
 ├── stb_image.h # Header for reading images  
@@ -77,11 +77,11 @@ Task 4. Non-zero entries in A1 = 1592178
 Task 5. Smoothed image saved to Outputs/smoothing.png
 Task 6. Non-zero entries in A2 = 1138088, A2 symmetric? true
 Task 7. Sharpened image saved to Outputs/sharpening.png
-Task 8. Exported A2.mtx and w.mtx
-Task 8. LIS iterations = 11, final residual = 9.31093258628e-16
+Task 8. Exported A2.mtx and w.mtx under /Outputs
+Task 8. LIS iterations = 11, final residual = 9.35333117183e-16
 Task 9. LIS solution image saved to Outputs/lis_solution.png
 Task 10. A3 symmetric? false
 Task 11. Edge detection image saved to Outputs/edge_detection.png
-Task 12. Eigen solver iterations = 59, final residual = 6.19256968144e-09
+Task 12. Eigen solver iterations = 57, final residual = 4.98074833471e-09
 Task 13. Eigen solution image saved to Outputs/eigen_solution.png
 ```
