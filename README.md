@@ -8,7 +8,7 @@ For the way in which the `Makefile` is written, the program will take the `uma.j
 
 <img width="456" height="500" alt="image" src="https://github.com/user-attachments/assets/4e6e201d-2b00-403e-8caf-35d8b3f27fa7" />
 
-and apply the image processing operations to this file.
+and apply the image processing operations to this image.
 
 ## Requirements
 
