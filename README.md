@@ -71,17 +71,17 @@ The output obtained by the execution of this program is:
 
 ```
 Task 1. Image size: 500 x 456 (rows x cols)
-Task 2. Noise image saved to noise.png
+Task 2. Noise image saved to Outputs/noise.png
 Task 3. v size = 228000, ||v||_2 = 62506.566799
 Task 4. Non-zero entries in A1 = 1592178
-Task 5. Smoothed image saved to smoothing.png
+Task 5. Smoothed image saved to Outputs/smoothing.png
 Task 6. Non-zero entries in A2 = 1138088, A2 symmetric? true
-Task 7. Sharpened image saved to sharpening.png
+Task 7. Sharpened image saved to Outputs/sharpening.png
 Task 8. Exported A2.mtx and w.mtx
 Task 8. LIS iterations = 11, final residual = 9.31093258628e-16
-Task 9. LIS solution image saved to lis_solution.png
+Task 9. LIS solution image saved to Outputs/lis_solution.png
 Task 10. A3 symmetric? false
-Task 11. Edge detection image saved to edge_detection.png
+Task 11. Edge detection image saved to Outputs/edge_detection.png
 Task 12. Eigen solver iterations = 59, final residual = 6.19256968144e-09
-Task 13. Eigen solution image saved to eigen_solution.png
+Task 13. Eigen solution image saved to Outputs/eigen_solution.png
 ```
