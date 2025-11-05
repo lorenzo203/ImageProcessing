@@ -221,7 +221,7 @@ int main() {
         int width = 0;
         int height = 0;
         int channels = 0;
-        unsigned char *image_data = stbi_load("uma.jpg", &width, &height, &channels, 1);
+        unsigned char *image_data = stbi_load("data/uma.jpg", &width, &height, &channels, 1);
         if (!image_data) {
             throw std::runtime_error("Unable to load uma.jpg");
         }

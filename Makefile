@@ -1,31 +1,38 @@
-# Makefile
-
 # Compiler
 CXX      := g++
 CXXFLAGS := -O2 -std=c++17 -fopenmp
-INCLUDES := -I/usr/include/eigen3 -I./lis-2.1.10/include
-LDFLAGS  := -L./lis-2.1.10/src/.libs
+mkEigenInc ?= /usr/include/eigen3
+EIGEN_INC ?= ${mkEigenInc}
+
+# LIS
+LIS_DIR  := lis-2.1.10
+LIS_LIB  := $(LIS_DIR)/src/.libs/liblis.a
+
+INCLUDES := -I$(EIGEN_INC) -I$(LIS_DIR)/include -Isrc
+LDFLAGS  := -L$(LIS_DIR)/src/.libs
 LDLIBS   := -llis -lm
 
-# Targets
+# Program
 TARGET   := challenge1
-SRC      := challenge1.cpp
+SRC      := src/challenge1.cpp
 
-# Default rule: build lis first, then your program
-all: lis $(TARGET)
+.PHONY: all run clean
+all: $(TARGET)
 
-# Rule to build LIS (in-place, no install directory)
-lis:
-	cd lis-2.1.10 && make clean
-	cd lis-2.1.10 && CFLAGS="-fPIC" ./configure
-	cd lis-2.1.10 && make
 
-# Rule to build your program
-$(TARGET): $(SRC)
-	$(CXX) $(CXXFLAGS) $(INCLUDES) $^ $(LDFLAGS) $(LDLIBS) -o $@
+$(TARGET): $(SRC) $(LIS_LIB)
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $< $(LDFLAGS) $(LDLIBS) -o $@
 
-# Cleanup
+$(LIS_LIB):
+	@echo "==> Building LIS (only if missing)"
+	@if [ ! -f "$(LIS_DIR)/config.status" ]; then \
+        cd $(LIS_DIR) && CFLAGS="-fPIC" ./configure; \
+    fi
+	$(MAKE) -C $(LIS_DIR)
+
+run: $(TARGET)
+	@./$(TARGET)
+
 clean:
-	rm -f $(TARGET) *.o
-	cd lis-2.1.10 && make clean
-
+	@rm -f $(TARGET) *.o
+	@echo "Cleaned"

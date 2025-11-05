@@ -433,7 +433,7 @@ Copyright (C) 2023 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/lorenzo/Desktop/Comp_Env/NLA/Challenge1/lis-2.1.10'
+ac_pwd='/Desktop/Comp_Env/NLA/ImageProcessing/lis-2.1.10'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/usr/bin/mkdir -p'
@@ -1038,12 +1038,12 @@ S["mkdir_p"]="/usr/bin/mkdir -p"
 S["MKDIR_P"]="/usr/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]="strip"
-S["install_sh"]="${SHELL} /home/lorenzo/Desktop/Comp_Env/NLA/Challenge1/lis-2.1.10/config/install-sh"
-S["MAKEINFO"]="${SHELL} /home/lorenzo/Desktop/Comp_Env/NLA/Challenge1/lis-2.1.10/config/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/lorenzo/Desktop/Comp_Env/NLA/Challenge1/lis-2.1.10/config/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /home/lorenzo/Desktop/Comp_Env/NLA/Challenge1/lis-2.1.10/config/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /home/lorenzo/Desktop/Comp_Env/NLA/Challenge1/lis-2.1.10/config/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /home/lorenzo/Desktop/Comp_Env/NLA/Challenge1/lis-2.1.10/config/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /Desktop/Comp_Env/NLA/ImageProcessing/lis-2.1.10/config/install-sh"
+S["MAKEINFO"]="${SHELL} /Desktop/Comp_Env/NLA/ImageProcessing/lis-2.1.10/config/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /Desktop/Comp_Env/NLA/ImageProcessing/lis-2.1.10/config/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /Desktop/Comp_Env/NLA/ImageProcessing/lis-2.1.10/config/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /Desktop/Comp_Env/NLA/ImageProcessing/lis-2.1.10/config/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /Desktop/Comp_Env/NLA/ImageProcessing/lis-2.1.10/config/missing --run aclocal-1.11"
 S["VERSION"]="2.1.10"
 S["PACKAGE"]="lis"
 S["CYGPATH_W"]="echo"

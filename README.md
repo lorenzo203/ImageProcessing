@@ -47,7 +47,7 @@ So `make` handles both the LIS build process and the compilation of the program 
 After building, simply run:
 
 ```bash
-./challenge1
+make run
 ```
 
 ## Cleaning up
@@ -58,19 +58,22 @@ To remove all compiled files and reset the directory to a clean state:
 make clean
 ```
 
-This setup ensures that anyone with Eigen installed can compile and run the project using just `make` and `./challenge1`, without needing to install LIS separately.
+This setup ensures that anyone with Eigen and gcc installed can compile and run the project using just `make` and `make run`, without needing to install LIS separately.
 
 ## Repository Structure
 
 ```
-thisrepo/  
-├── challenge1.cpp # Main C++ source code  
-├── stb_image_write.h # Header for writing images (PNG)  
-├── stb_image.h # Header for reading images  
-├── Outputs/ # Folder where generated outputs are saved  
-├── lis-2/ # LIS library source files used for compilation  
-├── Makefile # Build script that compiles LIS and challenge1.cpp  
-└── uma.jpg # Input image used by the program
+ImageProcessing/
+├── Makefile                        # Build script (compiles LIS and challenge1)
+├── README.md
+├── src/                            # C++ sources
+│   ├── challenge1.cpp              # Main C++ source code
+│   ├── stb_image.h                 # Header to read images
+│   └── stb_image_write.h           # Header to write images (PNG)
+├── lis-2.1.10/                     # LIS source (build in-place)
+├── Outputs/                        # Directory including the outputs
+└── data
+    └── uma.jpg                     # Input image
 ```
 
 ## Output
