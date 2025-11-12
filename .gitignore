@@ -1,0 +1,19 @@
+# Compiled executable
+challenge1
+
+# Object files
+*.o
+
+# LIS library
+lis-*/
+lis-*.zip
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
